@@ -183,7 +183,7 @@ case "${OS}" in
         TARGETS="${RUST_OSX_TARGETS}"
 
         if [ "${RUST}" != "nightly" ]; then
-            if [ "{$RUST}" != "beta" ]; then
+            if [ "${RUST}" != "beta" ]; then
                 TARGETS="${TARGETS} ${RUST_LT_1_42_OSX_TARGETS}"
             fi
         fi
